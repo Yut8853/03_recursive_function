@@ -46,7 +46,9 @@ window.addEventListener('load', () => {
   if (x % 3 === 0 && x >= 30 && x <= 50) {
     console.log(x);
   }
+    if (x <= 50) {
     printNumber(x + 1);
+  }
 }
 
 // printNumberは以下のように使う
