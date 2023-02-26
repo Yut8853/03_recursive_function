@@ -43,10 +43,10 @@ window.addEventListener('load', () => {
 
   function printNumber(x) {
   // ここを実装する
-  if (x % 3 === 0 && x >= 30 && x <= 50) {
+  if (x % 3 === 0 && x >= 30 && x <= 50) { //ループ条件
     console.log(x);
   }
-    if (x <= 50) {
+    if (x <= 50) { //終了条件
     printNumber(x + 1);
   }
 }
