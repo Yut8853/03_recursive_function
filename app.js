@@ -54,3 +54,44 @@ window.addEventListener('load', () => {
 // printNumberは以下のように使う
 printNumber(30);
 })
+
+// 課題４
+
+window.addEventListener('load', () => {
+  // 再帰を使って30から50までの３で割り切れる整数を和を求めてください。
+
+  // @param x 現在の値
+  // @param sum 現在の合計値
+  // ここを実装する
+  function printNumber(x,sum) {
+    if (x <= 50) {
+      //ループ条件
+      if (x % 3 === 0 && x >= 30) {
+        //終了条件
+        // どこかでreturnを定義
+        sum = sum + x;
+      } 
+      const s = printNumber(x + 1, sum);
+      return s
+    } else {
+      return sum
+    }
+  }
+  console.log(printNumber(0, 0));
+  // 文は少ない方がいい
+  // 最終の値
+})
+
+// 課題４
+
+window.addEventListener('load', () => {
+  // 再帰を使って30から50までの３で割り切れる整数を和を求めてください。
+
+function sumNumber(x) {
+  // ここを実装する
+}
+
+// 以下のように使う
+const s = sumNumber(0);
+console.log(s);
+})
